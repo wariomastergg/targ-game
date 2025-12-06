@@ -39,8 +39,8 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
-size = Vector2(8, 8)
+[sub_resource type="CircleShape2D" id="CircleShape2D_onrkg"]
+radius = 4.0
 
 [node name="Player" type="CharacterBody2D"]
 script = ExtResource("2_onrkg")
@@ -52,4 +52,4 @@ sprite_frames = SubResource("SpriteFrames_2hs0m")
 zoom = Vector2(7, 7)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("RectangleShape2D_onrkg")
+shape = SubResource("CircleShape2D_onrkg")
